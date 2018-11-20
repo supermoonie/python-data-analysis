@@ -127,7 +127,19 @@ pyl.ylabel('y-y')
 pyl.xlim(0, 5)
 pyl.ylim(0, 20)
 pyl.show()
-# 生成随机数
+# 生成一般的随机数（100 个 1-25 之间的数字）
+arr = numpy.random.randint(1, 25, 100)
+pyl.hist(arr)
+pyl.show()
+# 生成正态分布的随机数
+arr = numpy.random().normal(10.0, 1.0, 100)
+pyl.hist(arr)
+pyl.show()
+# 设置 x 轴的宽度与间隔
+styl = numpy.arange(1, 30, 2)
+arr = numpy.random.randint(1, 30, 100)
+pyl.hist(arr)
+pyl.show()
 ```
 
 
