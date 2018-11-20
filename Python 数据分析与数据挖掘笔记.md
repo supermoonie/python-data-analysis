@@ -69,7 +69,15 @@ csv.sort_values(by='SPX')
 # 从excel 中读取数据
 excel = pda.read_excel('./arima_data.xls')
 # 从MySql 中读取数据
-
+import pymysql
+conn = pymysql.connect(host='127.0.0.1', user='root', passwd='wangchao123', db='test')
+sql = 'select * from pandas_data'
+pandas_data = pda.read_sql(sql, conn)
+# 从html 中读取数据，需要安装 html5lib、beautifulsoup4
+html = pda.read_html('./test.html')
+html = pda.read_html('https://movie.douban.com/')
+# 从txt 中读取数据
+txt = pda.read_table('./test.txt')
 ```
 
 __matplotlib__
