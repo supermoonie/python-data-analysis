@@ -138,7 +138,7 @@ pyl.show()
 # 设置 x 轴的宽度与间隔
 styl = numpy.arange(1, 30, 2)
 arr = numpy.random.randint(1, 30, 100)
-pyl.hist(arr)
+pyl.hist(arr, styl)
 pyl.show()
 ```
 
