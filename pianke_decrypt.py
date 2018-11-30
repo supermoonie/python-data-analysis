@@ -78,7 +78,7 @@ def get_one_user_info(user_id):
 
 def user_info_spider():
 	cursor = conn.cursor()
-	max_sql = "select max(id) from pianke_user;"
+	max_sql = "select coalesce(max(id), 100000) from pianke_user;"
 	cursor.execute(max_sql)
 	max_id = cursor.fetchone()[0] + 1
 	cursor.close()
