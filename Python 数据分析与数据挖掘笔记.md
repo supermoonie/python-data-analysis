@@ -24,7 +24,7 @@ x[1:-1]
 
 **pandas 的使用：**
 
-_pandas 为Python 提供了高性能，易于使用的数据机构和数据分析工具_
+_pandas 为Python 提供了高性能，易于使用的数据结构和数据分析工具_
 
 三个数据结构：
 
@@ -141,6 +141,8 @@ arr = numpy.random.randint(1, 30, 100)
 pyl.hist(arr, styl)
 pyl.show()
 ```
+
+__jieba__
 
 
 
